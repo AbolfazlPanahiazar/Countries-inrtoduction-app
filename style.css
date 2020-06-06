@@ -12,6 +12,10 @@ body {
   height: 100%;
 }
 
+.container {
+    background-color: #f1f1f1;
+}
+
 #callingCode {
     font-size: 8rem;
 }

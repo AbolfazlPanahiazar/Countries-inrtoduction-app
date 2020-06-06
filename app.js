@@ -16,7 +16,7 @@ $("#select").change(() => {
     method: "GET",
     timeout: 0,
   }).done((country) => {
-    // Name seciont
+    // Name section
     $("#name").text(country[0].name);
     $("#nativeName").text(country[0].nativeName);
     $("#capital").text(country[0].capital);
@@ -28,7 +28,10 @@ $("#select").change(() => {
     }
     $("#languages").text(langs.join(", "));
     $("#timezones").text(country[0].timezones.join(", "));
-    $("#flag").attr("src", country[0].flag);
-    $("#code").text(country[0].callingCodes.join(","));
+
+    // Calling code section
+    $("#callingCode").text(country[0].callingCodes.join(", "));
+    // $("#flag").attr("src", country[0].flag);
+    
   });
 });

@@ -12,6 +12,6 @@ body {
   height: 100%;
 }
 
-#select {
-    /* width: 75%; */
+#callingCode {
+    font-size: 10rem;
 }

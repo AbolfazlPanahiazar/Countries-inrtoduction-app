@@ -31,7 +31,9 @@ $("#select").change(() => {
 
     // Calling code section
     $("#callingCode").text(country[0].callingCodes.join(", "));
-    // $("#flag").attr("src", country[0].flag);
+
+    // Flag section
+    $("#flag").attr("src", country[0].flag);
     
   });
 });

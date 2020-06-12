@@ -84,14 +84,3 @@ $("#select").change(() => {
     });
   });
 });
-
-$.ajax({
-  url: "http://api.weatherstack.com/current",
-  data: {
-    access_key: "f49ee7b887c6633ac962f8100b725c51",
-    query: "40.7831,-73.9712",
-  },
-  timeout: 0,
-}).done((response) => {
-  console.log(response);
-});

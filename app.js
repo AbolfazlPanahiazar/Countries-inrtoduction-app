@@ -37,14 +37,18 @@ $("#select").change(() => {
 
     // Wheater section
     $.ajax({
-      url: `http://api.openweathermap.org/data/2.5/weather?q=${country[0].capital}&appid=db8863a90ed0b4976fe8b4361160d04a`,
-      method: "GET",
+      url: "http://api.weatherstack.com/current",
+      data: {
+        access_key: "f49ee7b887c6633ac962f8100b725c51",
+        query: `${country[0].latlng[0]},${country[0].latlng[1]}`,
+      },
       timeout: 0,
     }).done((weather) => {
-      $("#windSpeed").text(weather.wind.speed);
-      $('#temperature').text((weather.main.temp - 273).toFixed(2));
-      $('#humidity').text(weather.main.humidity);
-      $('#visibility').text(weather.visibility);
+      $("#windSpeed").text(weather.current.wind_speed);
+      $("#temperature").text(weather.current.temperature);
+      $("#humidity").text(weather.current.humidity);
+      $("#visibility").text(weather.current.visibility);
+      $("#weather-icon").attr('src', `${weather.current.weather_icons[0]}`);
     });
 
     // Map section
@@ -79,4 +83,15 @@ $("#select").change(() => {
       },
     });
   });
+});
+
+$.ajax({
+  url: "http://api.weatherstack.com/current",
+  data: {
+    access_key: "f49ee7b887c6633ac962f8100b725c51",
+    query: "40.7831,-73.9712",
+  },
+  timeout: 0,
+}).done((response) => {
+  console.log(response);
 });

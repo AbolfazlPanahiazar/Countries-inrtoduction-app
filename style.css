@@ -19,3 +19,7 @@ body {
 #callingCode {
     font-size: 8rem;
 }
+
+.text-lightgreen {
+  color: lightgreen;
+}

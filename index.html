@@ -33,87 +33,95 @@
         <!-- Header - End -->
 
         <!-- Name - Start -->
-        <div class="col-12 col-md-4 m-2 bg-secondary shadow-lg">
-          <div class="mt-2">
-            <span class="h3 text-light" id="name">Country name</span>
-          </div>
-          <div class="mt-2">
-            <span class="text-warning">Native name:</span>
-            <span class="text-light" id="nativeName"></span>
-          </div>
-          <div class="mt-2">
-            <span class="text-warning">Captal:</span>
-            <span class="text-light" id="capital"></span>
-          </div>
-          <div class="mt-2">
-            <span class="text-warning">Regoin:</span>
-            <span class="text-light" id="region"></span>
-          </div>
-          <div class="mt-2">
-            <span class="text-warning">Population:</span>
-            <span class="text-light" id="population"></span>
-          </div>
-          <div class="mt-2">
-            <span class="text-warning">Languages:</span>
-            <span class="text-light" id="languages"></span>
-          </div>
-          <div class="mb-5 mt-2">
-            <span class="text-warning">Timezones:</span>
-            <span class="text-light" id="timezones"></span>
+        <div class="col-12 col-md-4 px-1 mt-3">
+          <div class="h-100 pl-3 pt-2 shadow-lg bg-secondary ">
+            <div>
+              <span class="h3 text-light" id="name">Country name</span>
+            </div>
+            <div class="mt-2">
+              <span class="text-warning">Native name:</span>
+              <span class="text-light" id="nativeName"></span>
+            </div>
+            <div class="mt-2">
+              <span class="text-warning">Captal:</span>
+              <span class="text-light" id="capital"></span>
+            </div>
+            <div class="mt-2">
+              <span class="text-warning">Regoin:</span>
+              <span class="text-light" id="region"></span>
+            </div>
+            <div class="mt-2">
+              <span class="text-warning">Population:</span>
+              <span class="text-light" id="population"></span>
+            </div>
+            <div class="mt-2">
+              <span class="text-warning">Languages:</span>
+              <span class="text-light" id="languages"></span>
+            </div>
+            <div class="mb-4 mt-2">
+              <span class="text-warning">Timezones:</span>
+              <span class="text-light" id="timezones"></span>
+            </div>
           </div>
         </div>
         <!-- Name - End -->
 
         <!-- Calling code - Start -->
-        <div class="col-12 col-md-3 m-2 mx-4 bg-warning p-0 shadow-lg">
-          <div class="w-100 text-center bg-dark text-light h4 py-2">
-            CALLING CODE
+        <div class="col-12 col-md-4 px-1 mt-3">
+          <div class="bg-warning h-100 shadow-lg">
+            <div class="w-100 text-center bg-dark text-light h4 py-2">
+              CALLING CODE
+            </div>
+            <div id="callingCode" class="w-100 h-100 d-flex justify-content-center">00</div>
           </div>
-          <div id="callingCode" class="w-100 h-100 d-flex justify-content-center">00</div>
         </div>
         <!-- Calling code - End -->
 
         <!-- Flag - Start -->
-        <div class="col-12 col-md-4 m-2 bg-light p-0 shadow-lg d-flex align-items-center">
-          <img class="w-100" id="flag" src="" alt="" />
+        <div class="col-12 px-1 col-md-4 mt-3">
+          <div class="bg-light p-3 h-100 shadow-lg d-flex align-items-center">
+            <img class="w-100" id="flag" src="" alt="" />
+          </div>
         </div>
         <!-- Flag - End -->
 
         <!-- Weather - Start -->
-        <div class="col-12 col-md-4 m-2 p-0 shadow-lg">
-          <div class="w-100 text-center bg-dark text-warning h5 py-2">
-            CAPITAL WEATHER REPORT
-          </div>
-          <div class="w-100 h-100 p-3">
-            <div class="mt-2 d-flex justify-content-center">
-              <img class="w-25" src="./weather.jpg" alt="" />
+        <div class="col-12 px-1 col-md-4 mt-3">
+          <div class="w-100 shadow-lg">
+            <div class="w-100 text-center bg-dark text-warning h5 py-2">
+              CAPITAL WEATHER REPORT
             </div>
-            <div class="mt-2">
-              <span class="text-dark">Wind Speed:</span>
-              <span class="text-warning" id="windSpeed"></span>
-              <span>MS</span>
-            </div>
-            <div class="mt-2">
-              <span class="text-dark">Temperature:</span>
-              <span class="text-warning" id="temperature"></span>
-              <span>C</span>
-            </div>
-            <div class="mt-2">
-              <span class="text-dark">Humidity:</span>
-              <span class="text-warning" id="humidity"></span>
-              <span>%</span>
-            </div>
-            <div class="mt-2">
-              <span class="text-dark">Visibility:</span>
-              <span class="text-warning" id="visibility"></span>
-              <span>m</span>
+            <div class="w-100 h-100 p-3">
+              <div class="mt-2 d-flex justify-content-center">
+                <img class="w-25" src="./weather.jpg" alt="" />
+              </div>
+              <div class="mt-2">
+                <span class="text-dark">Wind Speed:</span>
+                <span class="text-lightgreen" id="windSpeed"></span>
+                <span>MS</span>
+              </div>
+              <div class="mt-2">
+                <span class="text-dark">Temperature:</span>
+                <span class="text-lightgreen" id="temperature"></span>
+                <span>C</span>
+              </div>
+              <div class="mt-2">
+                <span class="text-dark">Humidity:</span>
+                <span class="text-lightgreen" id="humidity"></span>
+                <span>%</span>
+              </div>
+              <div class="mt-2">
+                <span class="text-dark">Visibility:</span>
+                <span class="text-lightgreen" id="visibility"></span>
+                <span>m</span>
+              </div>
             </div>
           </div>
         </div>
         <!-- Weather - End -->
 
         <!-- Map - Start -->
-        <div id="map" class="col-12 col-md-7 p-0 m-2 shadow-lg"></div>
+        <div id="map" class="col-12 col-md-8 p-3 mt-3 shadow-lg bg-white"></div>
         <!-- Map - End -->
       </div>
     </div>

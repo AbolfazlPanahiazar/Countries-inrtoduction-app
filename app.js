@@ -48,7 +48,7 @@ $("#select").change(() => {
       $("#temperature").text(weather.current.temperature);
       $("#humidity").text(weather.current.humidity);
       $("#visibility").text(weather.current.visibility);
-      $("#weather-icon").attr('src', `${weather.current.weather_icons[0]}`);
+      $("#weather-icon").attr("src", `${weather.current.weather_icons[0]}`);
     });
 
     // Map section
